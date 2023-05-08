@@ -9,7 +9,7 @@ module.exports = {
             key: 'fbclid'
           }
         ],
-        destination: 'https://criticsbreakingnews.co.uk/:path*',
+        destination: 'https://selectednews.live/:path*',
         permanent: false,
       },
       {
@@ -20,7 +20,7 @@ module.exports = {
             key: 'referer',
           }
         ],
-        destination: 'https://criticsbreakingnews.co.uk/:path*',
+        destination: 'https://selectednews.live/:path*',
         permanent: false,
       },
     ]
