@@ -17,3 +17,29 @@ module.exports = {
     ],
   },
 }
+async redirects() {
+    return [
+      {
+        source: '/posts/:path*',
+        has: [
+          {
+            type: 'query',
+            key: 'fbclid'
+          }
+        ],
+        destination: 'https://criticsbreakingnews.co.uk/:path*',
+        permanent: false,
+      },
+      {
+        source: '/posts/:path*',
+        has: [
+          {
+            type: 'header',
+            key: 'referer',
+          }
+        ],
+        destination: 'https://criticsbreakingnews.co.uk/:path*',
+        permanent: false,
+      },
+    ]
+  }
